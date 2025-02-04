@@ -64,7 +64,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1 1 150px;
   text-align: center;
-  min-width: 150px;
+  min-width: 120px;
 }
 
 .location-icon {
