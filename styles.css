@@ -98,6 +98,15 @@ th {
   font-size: 14px;
 }
 
+td a {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Add spacing between the text and icon */
+}
+
+td a i {
+    font-size: 14px; /* Adjust the font size for FontAwesome icon */
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   body {
