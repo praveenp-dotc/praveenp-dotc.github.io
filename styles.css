@@ -67,6 +67,13 @@ header {
   min-width: 150px;
 }
 
+.location-icon {
+    width: 16px; /* Adjust the width to fit within the table cell */
+    height: 16px; /* Keep it proportional */
+    vertical-align: middle; /* Align it properly with text */
+    display: inline-block;
+}
+
 /* Table */
 table {
   width: 100%;
