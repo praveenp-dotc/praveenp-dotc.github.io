@@ -6,7 +6,7 @@ body {
   background-color: #f4f4f9;
   display: flex;
   justify-content: center;
-  align-items: top;
+  align-items: flex-start; /* Changed from 'top' to 'flex-start' */
   min-height: 100vh;
 }
 
@@ -26,7 +26,8 @@ header {
 .container {
   width: 95%;
   max-width: 1200px;
-  margin-top: 50px;
+  margin-top: 20px; /* Reduced margin for better spacing on mobile */
+  padding: 10px; /* Added padding for better spacing */
 }
 
 /* Filters */
@@ -90,15 +91,34 @@ th {
   font-size: 14px;
 }
 
-/* Table scroll for mobile */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .filters, .dashboard {
+  body {
+    align-items: flex-start; /* Ensure content aligns to the top on mobile */
+  }
+
+  .container {
+    margin-top: 10px; /* Reduced margin for mobile */
+  }
+
+  .filters {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch; /* Stretch dropdowns to full width */
   }
 
   .filters select {
-    max-width: 100%;
+    max-width: 100%; /* Full width for dropdowns */
+  }
+
+  .dashboard {
+    flex-direction: column;
+    align-items: stretch; /* Stretch cards to full width */
+  }
+
+  .card {
+    min-width: 100%; /* Full width for cards */
+    font-size: 14px;
+    margin-bottom: 10px; /* Add spacing between cards */
   }
 
   table {
@@ -111,9 +131,24 @@ th {
     font-size: 10px;
     padding: 6px;
   }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 40px; /* Smaller logo for very small screens */
+  }
+
+  .filters select {
+    font-size: 12px; /* Smaller font size for dropdowns */
+  }
 
   .card {
-    min-width: 120px;
-    font-size: 14px;
+    padding: 10px; /* Reduced padding for cards */
+    font-size: 12px; /* Smaller font size for cards */
+  }
+
+  th, td {
+    font-size: 8px; /* Smaller font size for table cells */
+    padding: 4px; /* Reduced padding for table cells */
   }
 }
