@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  min-height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 170px;
+}
+
+.logo {
+  height: 80px;
+  align-items: center;
+  align:center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 80px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: lightgray;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  margin: 10px 0 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+   font-size: 12px;
+}
+
+th {
+  background-color: green;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+}
+
+td {
+    font-size: 14px;
+}
+
+td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+.location-icon {
+            width: 30px;
+            height: 30px;
+			color: blue;
+        }
+.fa-map-marker-alt {
+  font-size: 20px;
+  color: #007bff;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasudha</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="vasudha_logo-nobg.png" alt="Vasudha Logo" align="center" class="logo">
+  </header>
+
+
+  <div class="container">
+  <div>
+  <p>
+  </p>
+   <p>
+  </p>
+  </div>
+    <div>
+  <p>
+  </p>
+   <p>
+  </p>
+  </div>
+    <!-- Filters -->
+    <div class="filters">
+      <select id="village">
+        <option value="all">All Villages</option>
+        <option value="Madanapally">Madanapally</option>
+        <option value="Pocharam">Pocharam</option>
+        <option value="Serlingampally">Serlingampally</option>
+      </select>
+      <select id="propertyType">
+        <option value="all">All Property Types</option>
+        <option value="Agricultural">Agricultural</option>
+        <option value="Non-Agricultural">Non-Agricultural</option>
+      </select>
+	  <select id="company">
+        <option value="all">All Companies</option>
+        <option value="JB Ventures Pvt Ltd">JB Ventures Pvt Ltd</option>
+        <option value="MyHome Real Estates P Ltd">MyHome Real Estates P Ltd</option>
+		  <option value="MyHome Constructions Pvt Ltd">MyHome Constructions Pvt Ltd</option>
+      </select>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard">
+      <div class="card">
+        <h3>Total Sites</h3>
+        <p id="siteCount">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Area</h3>
+        <p id="totalArea">0 Acres 0 Guntas</p>
+      </div>
+	   <div class="card">
+        <h3>Agricultural Sites</h3>
+        <p id="agrSites">0</p>
+      </div>
+	   <div class="card">
+        <h3>Non-Agricultural Sites</h3>
+        <p id="nonagrSites">0</p>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <table id="grid">
+      <thead>
+        <tr>
+          <th>Site ID</th>
+          <th>Site Name</th>
+          <th>Property Type</th>
+          <th>Village Name</th>
+          <th>Company Name</th>
+          <th>Survey Number(s)</th>
+          <th>Document Date</th>
+          <th>Document Number</th>
+          <th>Vendor Name</th>
+          <th>Acres</th>
+          <th>Guntas</th>
+          <th>Proceeding Number</th>
+          <th>Proceeding Date</th>
+          <th>Google Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample Data -->
+        <tr data-village="Madanapally" data-property="Agricultural" data-company="JB Ventures Pvt Ltd">
+          <td>1</td>
+          <td>Madanapally Farm Estates</td>
+          <td>Agricultural</td>
+          <td>Madanapally</td>
+          <td>JB Ventures Pvt Ltd</td>
+          <td>12, 13, 14</td>
+          <td>01-Jan-2023</td>
+		  <td><a href="doc123.pdf" target="_blank">DOC123.PDF</a></td>
+          <td>Surender Reddy</td>
+          <td class="acres">10</td>
+          <td class="guntas">20</td>
+		  <td><a href="Proceeding_1.pdf" target="_blank">Proceeding - 1</a></td>
+          <td>2023-02-01</td>
+          <td><a href="https://maps.app.goo.gl/8xXRJFJUriRnMeYF7" target="_blank"><img class="location-icon" src="location_icon.png" <i class="fas fa-map-marker-alt"></i></a></td>
+        </tr>
+        <tr data-village="Pocharam" data-property="Non-Agricultural" data-company="MyHome Real Estates P Ltd">
+          <td>2</td>
+          <td>Pocharam Layout A</td>
+          <td>Non-Agricultural</td>
+          <td>Pocharam</td>
+          <td>MyHome Real Estates P Ltd</td>
+          <td>456</td>
+          <td>20-Jun-2023</td>
+          <td><a href="doc345.pdf" target="_blank">DOC345.PDF</a></td>
+          <td>Satyanarayana EVS</td>
+          <td class="acres">15</td>
+          <td class="guntas">25</td>
+          <td> </td>
+          <td> </td>
+          <td><a href="https://maps.app.goo.gl/TWC2SfLxZeW6brYv6" target="_blank"><img class="location-icon" src="location_icon.png" <i class="fas fa-map-marker-alt"></i></a></td>
+        </tr>
+		<tr data-village="Serlingampally" data-property="Non-Agricultural" data-company="MyHome Constructions Pvt Ltd">
+          <td>3</td>
+          <td>MyHome Twitza</td>
+          <td>Non-Agricultural</td>
+          <td>Serlingampally</td>
+          <td>MyHome Constructions Pvt Ltd</td>
+          <td>45</td>
+          <td>12-Mar-2022</td>
+          <td><a href="doc345.pdf" target="_blank">DOC11235.PDF</a></td>
+          <td>Telangana State Govt Auction</td>
+          <td align="right"" class="acres">204</td>
+          <td class="guntas">10</td>
+          <td> </td>
+          <td> </td>
+          <td><a href="https://maps.app.goo.gl/j6PHDDRET1RzuW949" target="_blank"><img class="location-icon" src="location_icon.png" <i class="fas fa-map-marker-alt"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
